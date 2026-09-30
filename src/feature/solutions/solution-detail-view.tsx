@@ -2,10 +2,26 @@ import Image from "next/image";
 import Link from "next/link";
 import { solutions } from "@/data/solutions";
 import { WhyChooseUs } from "./sections/why-choose-us";
+import { GlobalFaq } from "@/app/components/ui/faq";
 
 type Solution = typeof solutions[0];
 
 export function SolutionDetailView({ solution }: { solution: Solution }) {
+  const solutionFaqs = [
+    {
+      question: `What makes your ${solution.title} solutions different?`,
+      answer: `Our ${solution.title} solutions are designed with scalability, reliability, and enterprise-grade security at their core. We partner with tier-1 global vendors to ensure you receive best-in-class technology.`
+    },
+    {
+      question: `Do you provide ongoing support for ${solution.title} deployments?`,
+      answer: "Yes, we provide comprehensive end-to-end support, from initial consultation and design to post-deployment maintenance and troubleshooting."
+    },
+    {
+      question: `How long does it take to implement your ${solution.title} solutions?`,
+      answer: "Implementation timelines vary depending on the exact scope and scale of your requirements. Once we assess your infrastructure, we provide a detailed project roadmap."
+    }
+  ];
+
   return (
     <main className="flex min-h-screen flex-col w-full bg-white">
       {/* Hero Section */}
@@ -94,6 +110,7 @@ export function SolutionDetailView({ solution }: { solution: Solution }) {
       </section>
 
       <WhyChooseUs />
+      <GlobalFaq items={solutionFaqs} title={`${solution.title} FAQs`} description={`Learn more about our ${solution.title} services.`} />
     </main>
   );
 }
