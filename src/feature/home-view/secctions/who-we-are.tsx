@@ -22,11 +22,16 @@ export function WhoWeAre() {
               A trusted ICT partner for a connected tomorrow.
             </h2>
             
-            <p className="text-base md:text-lg text-zinc-500 font-medium mb-10 leading-relaxed w-full">
-              Unitech Distribution is a value-added ICT distributor delivering
-              world-class technology products, solutions and expertise across
-              connectivity, data centers, security, and wireless infrastructure.
-            </p>
+            <div className="flex flex-col gap-6 text-base md:text-lg text-zinc-500 font-medium mb-10 leading-relaxed w-full">
+              <p>
+                Unitech Distribution is a value-added ICT distributor delivering
+                world-class technology products, solutions and expertise across
+                connectivity, data centers, security, and wireless infrastructure.
+              </p>
+              <p>
+                Based in the UAE, we provide end-to-end infrastructure solutions through a strong network of partners, resellers, and system integrators. Our mission is to help organizations build smarter, more secure, and future-ready IT environments.
+              </p>
+            </div>
 
             <div className="flex flex-wrap gap-4 items-center">
               <button className="bg-deep-navy text-white px-6 py-3.5 rounded-full font-bold hover:bg-dark-blue transition-colors flex items-center justify-center gap-3 text-sm shadow-xl">
