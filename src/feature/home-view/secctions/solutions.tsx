@@ -1,105 +1,137 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const solutions = [
   {
     id: "structured-cabling",
-    title: "Structured Cabling",
-    desc: "High-performance copper and fiber infrastructure.",
+    title: "Cabling",
+    tags: "Copper, Fiber, Backbone, Racks",
+    desc: "High-performance copper and fiber infrastructure designed for reliability and speed.",
     image: "/images/solutions/structured-cabling.webp",
   },
   {
     id: "datacenter-solution",
-    title: "Data Center Infrastructure",
-    desc: "Reliable, scalable and efficient data environments.",
+    title: "Data Center",
+    tags: "Design, Cooling, Power, Racks",
+    desc: "Reliable, scalable and efficient data environments built for enterprise demands.",
     image: "/images/solutions/data-center.webp",
   },
   {
     id: "cctv",
-    title: "Security & Surveillance",
-    desc: "Advanced CCTV and security solutions.",
+    title: "Security",
+    tags: "CCTV, Access Control, Monitoring",
+    desc: "Advanced surveillance and access control systems for complete facility protection.",
     image: "/images/solutions/security-and-surveillances.webp",
   },
   {
     id: "ups",
-    title: "Power Protection",
-    desc: "UPS and critical power continuity.",
+    title: "Power",
+    tags: "UPS, Inverters, Batteries",
+    desc: "Uninterruptible power supplies and critical power continuity solutions.",
     image: "/images/solutions/power-protection.webp",
   },
   {
     id: "wireless",
-    title: "Wireless & LTE",
-    desc: "Enterprise wireless and connectivity solutions.",
+    title: "Wireless",
+    tags: "Wi-Fi, LTE, Point-to-Point",
+    desc: "Enterprise wireless and robust connectivity solutions for seamless operations.",
     image: "/images/solutions/lte.webp",
   },
   {
     id: "fiber-optic",
-    title: "Fiber Optic Networks",
-    desc: "High-bandwidth fiber connectivity for modern networks.",
+    title: "Fiber Optic",
+    tags: "Splicing, Testing, FTTH",
+    desc: "High-bandwidth fiber connectivity for modern high-speed networks.",
     image: "/images/solutions/fiber-optic.webp",
   },
 ];
 
 export function Solutions() {
   return (
-    <section className="w-full section-master bg-[#04101B] flex flex-col items-center">
-      <div className="container-master flex flex-col">
+    <section className="w-full py-20 lg:py-32 bg-[#FDFBF7] flex flex-col items-center">
+      <div className="container-master w-full">
         {/* Header Section */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 lg:mb-16 gap-6">
-          <div className="flex flex-col">
-            <span className="text-xs font-bold tracking-[0.2em] text-white/50 uppercase mb-4 block">
-              OUR SOLUTIONS
-            </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white font-[family-name:var(--font-montserrat)] max-w-2xl leading-tight mb-4">
-              From infrastructure to innovation.
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 lg:mb-20 gap-6">
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="flex flex-col"
+          >
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] tracking-tight">
+              Our Core Services
             </h2>
-            <p className="text-base md:text-lg text-white/70 max-w-xl font-medium">
-              We provide the technology foundation businesses depend on.
-            </p>
-          </div>
-          <Link href="/solutions" className="text-electric-blue text-sm font-semibold hover:text-bright-blue transition-colors flex items-center gap-2">
-            View All Solutions
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
-          </Link>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <Link href="/solutions" className="text-zinc-500 text-sm font-bold uppercase tracking-wider hover:text-zinc-900 transition-colors flex items-center gap-2 pb-2">
+              View All
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+            </Link>
+          </motion.div>
         </div>
 
-        {/* Grid Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Rows List */}
+        <div className="flex flex-col border-t border-zinc-200">
           {solutions.map((item, index) => (
-            <Link
+            <motion.div
               key={item.id}
-              href={`/solutions/${item.id}`}
-              className="group relative h-[320px] rounded-none overflow-hidden border border-white/10 bg-deep-navy flex flex-col justify-between hover:border-electric-blue/50 transition-colors"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
             >
-              {/* Background Image & Gradient */}
-              <div className="absolute inset-0 z-0">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover object-right opacity-50 group-hover:opacity-70 transition-opacity mix-blend-luminosity"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-[#04101B] via-[#04101B]/90 to-transparent"></div>
-                <div className="absolute inset-0 bg-electric-blue/10 mix-blend-overlay"></div>
-              </div>
-
-              {/* Content */}
-              <div className="relative z-10 p-8 flex flex-col h-full w-[70%]">
-                <div className="text-white/40 font-mono text-xl md:text-2xl mb-4">
+              <Link
+                href={`/solutions/${item.id}`}
+                className="group flex flex-col md:flex-row items-start md:items-center w-full py-6 md:py-8 border-b border-zinc-200 hover:bg-white transition-colors px-2 md:px-4 gap-6 md:gap-0"
+              >
+                {/* 1. Number */}
+                <div className="w-full md:w-[5%] flex-shrink-0 text-zinc-900 font-mono text-sm font-bold flex items-start self-start pt-1 md:pt-3">
                   {(index + 1).toString().padStart(2, '0')}
                 </div>
-                <h3 className="text-xl md:text-2xl font-bold text-white mb-3 leading-tight">
-                  {item.title}
-                </h3>
-                <p className="text-sm text-white/70 font-medium mb-auto">
-                  {item.desc}
-                </p>
-                <div className="flex items-center gap-2 text-white text-sm font-semibold mt-6 group-hover:text-electric-blue transition-colors">
-                  Explore
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transform group-hover:translate-x-1 transition-transform"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+
+                {/* 2. Title */}
+                <div className="w-full md:w-[25%] flex-shrink-0 self-start md:pt-1">
+                  <h3 className="text-4xl md:text-5xl lg:text-6xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] tracking-tight group-hover:opacity-70 transition-opacity">
+                    {item.title}
+                  </h3>
                 </div>
-              </div>
-            </Link>
+
+                {/* 3. Tags */}
+                <div className="w-full md:w-[20%] flex-shrink-0 self-start md:pt-3">
+                  <p className="text-[10px] sm:text-xs font-mono text-[#F45D22] uppercase leading-relaxed tracking-wider max-w-[150px]">
+                    {item.tags.split(', ').map(tag => (
+                      <span key={tag} className="block">{tag}</span>
+                    ))}
+                  </p>
+                </div>
+
+                {/* 4. Description */}
+                <div className="w-full md:w-[25%] flex-shrink-0 self-start pr-4 lg:pr-10 md:pt-3">
+                  <p className="text-sm md:text-base text-zinc-800 font-medium leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+
+                {/* 5. Image */}
+                <div className="w-full md:w-[25%] h-48 md:h-28 lg:h-36 relative overflow-hidden flex-shrink-0 mt-4 md:mt-0">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                  />
+                </div>
+              </Link>
+            </motion.div>
           ))}
         </div>
       </div>

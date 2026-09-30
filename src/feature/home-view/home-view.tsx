@@ -9,11 +9,13 @@ export function HomeView() {
   return (
     <main className="flex min-h-viewport flex-col">
       <Hero />
-      <Partners />
-      <WhoWeAre />
-      <Solutions />
-      <WhyUnitech />
-      <Industries />
+      <div className="relative z-10 bg-white flex flex-col">
+        <Partners />
+        <WhoWeAre />
+        <Solutions />
+        <WhyUnitech />
+        <Industries />
+      </div>
     </main>
   );
 }
