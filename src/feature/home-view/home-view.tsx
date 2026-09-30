@@ -4,6 +4,7 @@ import { Solutions } from "./secctions/solutions";
 import { WhyUnitech } from "./secctions/why-unitech";
 import { Industries } from "./secctions/industries";
 import { Partners } from "./secctions/partners";
+import { Faq } from "./secctions/faq";
 
 export function HomeView() {
   return (
@@ -15,6 +16,7 @@ export function HomeView() {
         <Solutions />
         <WhyUnitech />
         <Industries />
+        <Faq />
       </div>
     </main>
   );
