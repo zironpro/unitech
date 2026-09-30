@@ -3,26 +3,22 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const faqs = [
-  {
-    question: "What industries do you primarily serve?",
-    answer: "We provide comprehensive technology and infrastructure solutions for a wide range of industries including Data Centers, Telecommunications, Healthcare, Commercial Buildings, Government, and Banking & Finance."
-  },
-  {
-    question: "Do you offer post-installation support and maintenance?",
-    answer: "Yes, our commitment extends beyond delivery. We work closely with our partners and system integrators to ensure long-term support, maintenance, and seamless operation of all deployed infrastructure."
-  },
-  {
-    question: "How do you select your technology partners?",
-    answer: "We partner exclusively with globally recognized, tier-1 manufacturers who meet strict standards for reliability, innovation, and performance to ensure our clients receive only the best-in-class solutions."
-  },
-  {
-    question: "Can you handle large-scale enterprise deployments?",
-    answer: "Absolutely. We specialize in scaling robust IT ecosystems. Our logistics, expert network, and integrated portfolio allow us to seamlessly execute enterprise-level infrastructure rollouts across the region."
-  }
-];
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
 
-export function Faq() {
+interface GlobalFaqProps {
+  title?: string;
+  description?: string;
+  items: FaqItem[];
+}
+
+export function GlobalFaq({ 
+  title = "Frequently Asked Questions", 
+  description = "Everything you need to know about our services and solutions.", 
+  items 
+}: GlobalFaqProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
@@ -33,15 +29,15 @@ export function Faq() {
             FAQ
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] leading-tight mb-6 tracking-tight">
-            Frequently Asked Questions
+            {title}
           </h2>
           <p className="text-zinc-500 font-medium text-base">
-            Everything you need to know about our services and solutions.
+            {description}
           </p>
         </div>
 
         <div className="flex flex-col gap-4">
-          {faqs.map((faq, index) => {
+          {items.map((faq, index) => {
             const isOpen = openIndex === index;
             return (
               <div 
