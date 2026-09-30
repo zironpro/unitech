@@ -2,11 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Drawer } from "vaul";
 import { solutions } from "@/data/solutions";
 
 export function Navbar() {
+    const pathname = usePathname();
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -26,16 +28,16 @@ export function Navbar() {
 
                 {/* Navigation Links (Desktop) */}
                 <nav className="hidden md:flex items-center gap-8">
-                    <Link href="/" className="text-sm font-semibold text-zinc-500 hover:text-zinc-900 transition-colors">
+                    <Link href="/" className={`text-sm font-semibold transition-colors ${pathname === '/' ? 'text-[#B99738]' : 'text-zinc-500 hover:text-[#B99738]'}`}>
                         Home
                     </Link>
-                    <Link href="/about" className="text-sm font-semibold text-zinc-500 hover:text-zinc-900 transition-colors">
+                    <Link href="/about" className={`text-sm font-semibold transition-colors ${pathname.startsWith('/about') ? 'text-[#B99738]' : 'text-zinc-500 hover:text-[#B99738]'}`}>
                         About Us
                     </Link>
                     
                     {/* Solutions Dropdown */}
                     <div className="relative group">
-                        <Link href="/solutions" className="text-sm font-semibold text-zinc-500 hover:text-zinc-900 transition-colors py-6 flex items-center gap-1">
+                        <Link href="/solutions" className={`text-sm font-semibold transition-colors py-6 flex items-center gap-1 ${pathname.startsWith('/solutions') ? 'text-[#B99738]' : 'text-zinc-500 hover:text-[#B99738]'}`}>
                             Solutions
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform duration-300 group-hover:-rotate-180 mt-0.5"><path d="m6 9 6 6 6-6"/></svg>
                         </Link>
@@ -61,7 +63,7 @@ export function Navbar() {
                         </div>
                     </div>
 
-                    <Link href="/industries" className="text-sm font-semibold text-zinc-500 hover:text-zinc-900 transition-colors">
+                    <Link href="/industries" className={`text-sm font-semibold transition-colors ${pathname.startsWith('/industries') ? 'text-[#B99738]' : 'text-zinc-500 hover:text-[#B99738]'}`}>
                         Industries
                     </Link>
                 </nav>
@@ -105,10 +107,10 @@ export function Navbar() {
                                             />
                                         </div>
 
-                                        <Link href="/" onClick={() => setIsOpen(false)} className="text-xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] hover:text-zinc-500 transition-colors text-center">Home</Link>
-                                        <Link href="/about" onClick={() => setIsOpen(false)} className="text-xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] hover:text-zinc-500 transition-colors text-center">About Us</Link>
-                                        <Link href="/solutions" onClick={() => setIsOpen(false)} className="text-xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] hover:text-zinc-500 transition-colors text-center">Solutions</Link>
-                                        <Link href="/industries" onClick={() => setIsOpen(false)} className="text-xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] hover:text-zinc-500 transition-colors text-center">Industries</Link>
+                                        <Link href="/" onClick={() => setIsOpen(false)} className={`text-xl font-normal font-[family-name:var(--font-ansage)] transition-colors text-center ${pathname === '/' ? 'text-[#B99738] font-semibold' : 'text-zinc-500 hover:text-[#B99738]'}`}>Home</Link>
+                                        <Link href="/about" onClick={() => setIsOpen(false)} className={`text-xl font-normal font-[family-name:var(--font-ansage)] transition-colors text-center ${pathname.startsWith('/about') ? 'text-[#B99738] font-semibold' : 'text-zinc-500 hover:text-[#B99738]'}`}>About Us</Link>
+                                        <Link href="/solutions" onClick={() => setIsOpen(false)} className={`text-xl font-normal font-[family-name:var(--font-ansage)] transition-colors text-center ${pathname.startsWith('/solutions') ? 'text-[#B99738] font-semibold' : 'text-zinc-500 hover:text-[#B99738]'}`}>Solutions</Link>
+                                        <Link href="/industries" onClick={() => setIsOpen(false)} className={`text-xl font-normal font-[family-name:var(--font-ansage)] transition-colors text-center ${pathname.startsWith('/industries') ? 'text-[#B99738] font-semibold' : 'text-zinc-500 hover:text-[#B99738]'}`}>Industries</Link>
                                         
                                         <div className="w-full h-px bg-slate-100 my-4"></div>
                                         
