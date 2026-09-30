@@ -7,7 +7,7 @@ export function SolutionsHero() {
         <span className="text-xs font-bold tracking-[0.2em] text-zinc-400 uppercase mb-6 block">
           OUR SOLUTIONS
         </span>
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] max-w-4xl leading-[1.1] mb-8 tracking-tight">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] max-w-4xl leading-[1.1] mb-8 tracking-tight">
           Comprehensive Technology Solutions
         </h1>
         <p className="text-base md:text-lg text-zinc-500 max-w-2xl font-medium">

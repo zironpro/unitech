@@ -62,7 +62,7 @@ export function Solutions() {
             transition={{ duration: 0.6 }}
             className="flex flex-col"
           >
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] tracking-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] tracking-tight">
               Our Core Services
             </h2>
           </motion.div>
@@ -100,7 +100,7 @@ export function Solutions() {
 
                 {/* 2. Title */}
                 <div className="w-full md:w-[25%] flex-shrink-0 self-start md:pt-1">
-                  <h3 className="text-4xl md:text-5xl lg:text-6xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] tracking-tight group-hover:opacity-70 transition-opacity">
+                  <h3 className="text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] tracking-tight group-hover:opacity-70 transition-opacity">
                     {item.title}
                   </h3>
                 </div>

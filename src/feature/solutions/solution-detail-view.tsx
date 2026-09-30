@@ -17,7 +17,7 @@ export function SolutionDetailView({ solution }: { solution: Solution }) {
             SOLUTION DETAIL
           </span>
           
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] leading-[1.1] mb-6 tracking-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] leading-[1.1] mb-6 tracking-tight">
             {solution.title}
           </h1>
           

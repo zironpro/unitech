@@ -16,13 +16,13 @@ export function WhoWeAre() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="w-full lg:w-[45%] flex flex-col items-start text-left"
+            className="w-full lg:w-[55%] flex flex-col items-start text-left lg:pr-12"
           >
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-normal text-zinc-900 mb-6 font-[family-name:var(--font-ansage)] leading-[1.05] tracking-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900 mb-6 font-[family-name:var(--font-ansage)] leading-[1.05] tracking-tight w-full">
               A trusted ICT partner for a connected tomorrow.
             </h2>
             
-            <p className="text-base md:text-lg text-zinc-500 font-medium mb-10 leading-relaxed max-w-lg">
+            <p className="text-base md:text-lg text-zinc-500 font-medium mb-10 leading-relaxed w-full">
               Unitech Distribution is a value-added ICT distributor delivering
               world-class technology products, solutions and expertise across
               connectivity, data centers, security, and wireless infrastructure.
@@ -46,7 +46,7 @@ export function WhoWeAre() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="w-full lg:w-[50%] h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden flex gap-4 md:gap-6 justify-center lg:justify-end relative"
+            className="w-full lg:w-[45%] h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden flex gap-4 md:gap-6 justify-center lg:justify-end relative"
           >
             {/* Top/Bottom Fade Masks for smooth scroll entry/exit */}
             <div className="absolute inset-0 z-20 pointer-events-none" style={{ backgroundImage: 'linear-gradient(to bottom, white 0%, transparent 15%, transparent 85%, white 100%)' }}></div>

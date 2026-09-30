@@ -4,12 +4,12 @@ export function WhyChooseUs() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 max-w-7xl mx-auto items-center">
         
         {/* Left Column - Text Content */}
-        <div className="flex flex-col max-w-xl">
+        <div className="flex flex-col w-full">
           <span className="text-xs font-bold tracking-[0.2em] text-zinc-400 uppercase mb-4 block">
             WHY CHOOSE UNITECH
           </span>
 
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal text-zinc-900 leading-[1.1] font-[family-name:var(--font-ansage)] mb-6 tracking-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900 leading-[1.1] font-[family-name:var(--font-ansage)] mb-6 tracking-tight">
             More Than Distribution. A Technology Partner.
           </h2>
 

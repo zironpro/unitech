@@ -4,12 +4,12 @@ export function WhoWeAre() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 max-w-7xl mx-auto">
         
         {/* Left Column - Text Content */}
-        <div className="flex flex-col max-w-2xl justify-center">
+        <div className="flex flex-col w-full justify-center">
           <span className="text-xs font-bold tracking-[0.2em] text-zinc-400 uppercase mb-4 block">
             WHO WE ARE
           </span>
 
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] leading-[1.1] mb-8 tracking-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] leading-[1.1] mb-8 tracking-tight">
             Technology Distribution. Real Impact.
           </h2>
 

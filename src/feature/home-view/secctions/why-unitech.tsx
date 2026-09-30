@@ -7,7 +7,7 @@ export function WhyUnitech() {
       {/* Top Header Section */}
       <div className="container-master mx-auto py-16 md:py-24">
         <div className="flex flex-col lg:flex-row justify-between lg:items-start gap-8">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] leading-tight flex-1">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] leading-tight flex-1">
             Why Choose Us
           </h2>
           <div className="flex-1 max-w-xl lg:pt-2">
@@ -41,7 +41,7 @@ export function WhyUnitech() {
                 <FiArrowUpRight className="text-zinc-900 text-lg" />
               </div>
               <div className="flex justify-between items-end">
-                <h3 className="text-5xl md:text-6xl lg:text-7xl font-normal text-zinc-900 tracking-tighter">
+                <h3 className="text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900 tracking-tighter">
                   30+
                 </h3>
                 <div className="w-20 h-24 relative overflow-hidden rounded-sm">
@@ -57,7 +57,7 @@ export function WhyUnitech() {
                 <FiArrowUpRight className="text-zinc-900 text-lg" />
               </div>
               <div className="flex justify-between items-end">
-                <h3 className="text-5xl md:text-6xl lg:text-7xl font-normal text-zinc-900 tracking-tighter">
+                <h3 className="text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900 tracking-tighter">
                   98%
                 </h3>
                 <div className="w-20 h-24 relative overflow-hidden rounded-sm">
@@ -73,7 +73,7 @@ export function WhyUnitech() {
                 <FiArrowUpRight className="text-zinc-900 text-lg" />
               </div>
               <div className="flex justify-between items-end">
-                <h3 className="text-5xl md:text-6xl lg:text-7xl font-normal text-zinc-900 tracking-tighter">
+                <h3 className="text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900 tracking-tighter">
                   1.2K+
                 </h3>
                 <div className="w-20 h-24 relative overflow-hidden rounded-sm">

@@ -59,7 +59,7 @@ export function Industries() {
           <span className="text-xs font-bold tracking-[0.2em] text-zinc-400 uppercase mb-4 block">
             INDUSTRIES WE SERVE
           </span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] max-w-3xl mx-auto leading-tight mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] max-w-3xl mx-auto leading-tight mb-6">
             Empowering Critical Sectors with Robust Infrastructure.
           </h2>
           <p className="text-zinc-500 font-medium max-w-2xl mx-auto text-base">

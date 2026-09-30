@@ -5,17 +5,17 @@ export function SolutionsGrid() {
   return (
     <section className="py-20 md:py-32 px-4 md:px-12 container-master mx-auto bg-white border-b border-slate-100">
       {/* Header Area */}
-      <div className="flex flex-col lg:flex-row items-start justify-between gap-8 mb-16 lg:mb-24">
-        <div className="max-w-2xl">
+      <div className="flex flex-col lg:flex-row items-start justify-between gap-8 mb-16 lg:mb-24 w-full">
+        <div className="w-full lg:w-[60%]">
           <span className="text-xs font-bold tracking-[0.2em] text-zinc-400 uppercase mb-4 block">
             WHAT WE DO
           </span>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-normal text-zinc-900 leading-[1.1] font-[family-name:var(--font-ansage)] tracking-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900 leading-[1.1] font-[family-name:var(--font-ansage)] tracking-tight">
             Technology Solutions for Modern Infrastructure.
           </h2>
         </div>
         
-        <div className="max-w-md flex flex-col items-start lg:items-end text-left lg:text-right gap-6 pt-2">
+        <div className="w-full lg:w-[40%] flex flex-col items-start lg:items-end text-left lg:text-right gap-6 pt-2">
           <p className="text-zinc-500 text-[15px] leading-relaxed font-medium">
             We provide a comprehensive range of ICT infrastructure solutions to help businesses build, connect, secure and power their world.
           </p>
