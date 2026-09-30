@@ -10,7 +10,7 @@ export function ContactForm() {
           <span className="text-xs font-bold tracking-[0.2em] text-slate-400 uppercase mb-4 block">
             CONTACT INFO
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-deep-navy leading-[1.15] font-[family-name:var(--font-montserrat)] mb-8">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-deep-navy leading-[1.15] font-[family-name:var(--font-ansage)] mb-8">
             We'd Love To Hear From You.
           </h2>
           <p className="text-slate-600 text-[15px] leading-relaxed mb-12">
@@ -63,35 +63,35 @@ export function ContactForm() {
         </div>
 
         {/* Right Column: Form */}
-        <div className="bg-[#fcfcfd] rounded-none p-8 lg:p-12 border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+        <div className="bg-[#fcfcfd] rounded-2xl p-8 lg:p-12 border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
           <form className="flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="flex flex-col gap-2">
                 <label htmlFor="firstName" className="text-sm font-semibold text-deep-navy">First Name</label>
-                <input type="text" id="firstName" className="w-full px-4 py-3 rounded-none border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-electric-blue/20 focus:border-electric-blue transition-colors text-slate-700" placeholder="John" />
+                <input type="text" id="firstName" className="w-full px-4 py-3 rounded-lg border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-electric-blue/20 focus:border-electric-blue transition-colors text-slate-700" placeholder="John" />
               </div>
               <div className="flex flex-col gap-2">
                 <label htmlFor="lastName" className="text-sm font-semibold text-deep-navy">Last Name</label>
-                <input type="text" id="lastName" className="w-full px-4 py-3 rounded-none border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-electric-blue/20 focus:border-electric-blue transition-colors text-slate-700" placeholder="Doe" />
+                <input type="text" id="lastName" className="w-full px-4 py-3 rounded-lg border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-electric-blue/20 focus:border-electric-blue transition-colors text-slate-700" placeholder="Doe" />
               </div>
             </div>
             
             <div className="flex flex-col gap-2">
               <label htmlFor="email" className="text-sm font-semibold text-deep-navy">Email Address</label>
-              <input type="email" id="email" className="w-full px-4 py-3 rounded-none border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-electric-blue/20 focus:border-electric-blue transition-colors text-slate-700" placeholder="john@company.com" />
+              <input type="email" id="email" className="w-full px-4 py-3 rounded-lg border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-electric-blue/20 focus:border-electric-blue transition-colors text-slate-700" placeholder="john@company.com" />
             </div>
 
             <div className="flex flex-col gap-2">
               <label htmlFor="subject" className="text-sm font-semibold text-deep-navy">Subject</label>
-              <input type="text" id="subject" className="w-full px-4 py-3 rounded-none border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-electric-blue/20 focus:border-electric-blue transition-colors text-slate-700" placeholder="How can we help?" />
+              <input type="text" id="subject" className="w-full px-4 py-3 rounded-lg border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-electric-blue/20 focus:border-electric-blue transition-colors text-slate-700" placeholder="How can we help?" />
             </div>
 
             <div className="flex flex-col gap-2">
               <label htmlFor="message" className="text-sm font-semibold text-deep-navy">Message</label>
-              <textarea id="message" rows={5} className="w-full px-4 py-3 rounded-none border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-electric-blue/20 focus:border-electric-blue transition-colors text-slate-700 resize-none" placeholder="Tell us about your project..."></textarea>
+              <textarea id="message" rows={5} className="w-full px-4 py-3 rounded-lg border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-electric-blue/20 focus:border-electric-blue transition-colors text-slate-700 resize-none" placeholder="Tell us about your project..."></textarea>
             </div>
 
-            <button type="submit" className="w-full bg-electric-blue text-white px-8 py-4 rounded-none font-bold hover:bg-bright-blue transition-colors mt-2 flex items-center justify-center gap-2 shadow-lg shadow-deep-navy/10">
+            <button type="submit" className="w-full bg-electric-blue text-white px-8 py-4 rounded-lg font-bold hover:bg-bright-blue transition-colors mt-2 flex items-center justify-center gap-2 shadow-lg shadow-deep-navy/10">
               Send Message
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </button>

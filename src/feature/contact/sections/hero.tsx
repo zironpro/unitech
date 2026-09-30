@@ -24,11 +24,11 @@ export function ContactHero() {
           <span className="inline-block w-8 h-[1px] bg-electric-blue/70 align-middle ml-4"></span>
         </span>
 
-        <h1 className="flex flex-col items-center mb-6 font-[family-name:var(--font-montserrat)]">
-          <span className="text-4xl sm:text-5xl md:text-6xl font-light text-white leading-[1.1] tracking-wide">
+        <h1 className="flex flex-col items-center mb-6 font-[family-name:var(--font-ansage)]">
+          <span className="text-4xl md:text-5xl lg:text-6xl font-light text-white leading-[1.1] tracking-wide">
             LET'S BUILD YOUR
           </span>
-          <span className="text-4xl sm:text-5xl md:text-6xl font-semibold text-white leading-[1.1] tracking-wide">
+          <span className="text-4xl md:text-5xl lg:text-6xl font-normal text-white leading-[1.1] tracking-wide">
             INFRASTRUCTURE
           </span>
         </h1>

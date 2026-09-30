@@ -18,7 +18,7 @@ export function IndustriesHero() {
       <div className="container-master mx-auto px-4 mt-16 md:mt-24">
         <div className="relative w-full h-[400px] md:h-[600px] rounded-3xl overflow-hidden shadow-xl">
           <Image
-            src="/images/page-hero.webp"
+            src="/images/industry-hero.jpg"
             alt="Unitech Industries"
             fill
             priority
