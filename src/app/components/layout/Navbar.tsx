@@ -70,7 +70,7 @@ export function Navbar() {
                 <div className="flex items-center gap-4">
                     <Link
                         href="/contact"
-                        className="hidden sm:flex bg-deep-navy text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-dark-blue transition-colors shadow-sm hover:shadow-md"
+                        className="hidden sm:flex bg-deep-navy text-white px-6 py-2.5 rounded-lg text-sm font-semibold hover:bg-dark-blue transition-colors shadow-sm hover:shadow-md"
                     >
                         Contact Us
                     </Link>
@@ -112,7 +112,7 @@ export function Navbar() {
                                         
                                         <div className="w-full h-px bg-slate-100 my-4"></div>
                                         
-                                        <Link href="/contact" onClick={() => setIsOpen(false)} className="bg-deep-navy text-white px-6 py-4 rounded-full text-center font-semibold hover:bg-dark-blue transition-colors flex items-center justify-center gap-2 mx-auto w-full max-w-xs shadow-sm">
+                                        <Link href="/contact" onClick={() => setIsOpen(false)} className="bg-deep-navy text-white px-6 py-4 rounded-lg text-center font-semibold hover:bg-dark-blue transition-colors flex items-center justify-center gap-2 mx-auto w-full max-w-xs shadow-sm">
                                             Contact Us
                                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
                                         </Link>

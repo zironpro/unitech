@@ -19,7 +19,7 @@ export function SolutionsGrid() {
           <p className="text-zinc-500 text-[15px] leading-relaxed font-medium">
             We provide a comprehensive range of ICT infrastructure solutions to help businesses build, connect, secure and power their world.
           </p>
-          <button className="flex items-center gap-2 border border-slate-200 rounded-full px-6 py-2.5 text-sm font-semibold text-zinc-900 hover:bg-slate-50 transition-colors shadow-sm">
+          <button className="flex items-center gap-2 border border-slate-200 rounded-lg px-6 py-2.5 text-sm font-semibold text-zinc-900 hover:bg-slate-50 transition-colors shadow-sm">
             Talk to a Specialist
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
           </button>

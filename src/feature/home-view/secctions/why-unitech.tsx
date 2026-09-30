@@ -21,7 +21,7 @@ export function WhyUnitech() {
       </div>
 
       {/* Middle Image Section with Floating Card */}
-      <div className="relative w-full h-[600px] md:h-[700px]">
+      <div className="relative w-full py-16 md:py-32 px-4 flex items-center justify-center min-h-[600px] md:min-h-[700px]">
         {/* Background Image (Parallax/Fixed Effect) */}
         <div
           className="absolute inset-0 w-full h-full bg-cover bg-center bg-fixed brightness-75"
@@ -29,7 +29,7 @@ export function WhyUnitech() {
         />
 
         {/* Floating White Card */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] md:w-[90%] lg:w-[85%] max-w-6xl bg-white p-8 md:p-12 shadow-2xl rounded-sm">
+        <div className="relative z-10 w-full md:w-[90%] lg:w-[85%] max-w-6xl bg-white p-6 md:p-12 shadow-2xl rounded-sm">
 
           {/* Stats Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 lg:gap-12 border-b border-zinc-100 pb-12">
@@ -98,8 +98,8 @@ export function WhyUnitech() {
               "/images/main-partners/bosch.svg",
               "/images/main-partners/cisco.svg",
               "/images/main-partners/hp.svg",
-              "/images/main-partners/ita-power",
-              "/images/main-partners/keline"
+              "/images/main-partners/ita-power.jpg",
+              "/images/main-partners/keline.jpg"
             ].map((src, index) => (
               <div key={index} className="relative w-16 h-8 md:w-24 md:h-10 opacity-70 hover:opacity-100 transition-opacity mix-blend-multiply">
                 <Image src={src} alt="Partner Logo" fill className="object-contain" />

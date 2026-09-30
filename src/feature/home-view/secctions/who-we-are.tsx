@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 export function WhoWeAre() {
@@ -33,15 +34,15 @@ export function WhoWeAre() {
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-4 items-center">
-              <button className="bg-deep-navy text-white px-6 py-3.5 rounded-full font-bold hover:bg-dark-blue transition-colors flex items-center justify-center gap-3 text-sm shadow-xl">
+            <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:gap-4 items-center w-full sm:w-auto">
+              <Link href="/solutions" className="bg-deep-navy text-white px-2 sm:px-6 py-3.5 rounded-lg font-bold hover:bg-dark-blue transition-colors flex items-center justify-center gap-1.5 sm:gap-3 text-[11px] sm:text-sm shadow-xl w-full text-center">
                 Explore Solutions
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
-              </button>
-              <button className="bg-zinc-100 text-zinc-900 px-6 py-3.5 rounded-full font-bold hover:bg-zinc-200 transition-colors flex items-center justify-center gap-3 text-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-3 h-3 sm:w-4 sm:h-4"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+              </Link>
+              <Link href="/about" className="bg-zinc-100 text-zinc-900 px-2 sm:px-6 py-3.5 rounded-lg font-bold hover:bg-zinc-200 transition-colors flex items-center justify-center gap-1.5 sm:gap-3 text-[11px] sm:text-sm w-full text-center">
                 About Us
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-zinc-400"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
-              </button>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-zinc-400 w-3 h-3 sm:w-4 sm:h-4"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+              </Link>
             </div>
           </motion.div>
 

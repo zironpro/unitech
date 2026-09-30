@@ -35,7 +35,7 @@ export const Hero = () => {
           <p className="text-lg md:text-xl text-zinc-300 font-medium mb-10 max-w-xl leading-relaxed">
             World-class technology solutions for connectivity, data centers, and security.
           </p>
-          <button className="bg-white text-black px-8 py-4 font-bold hover:bg-zinc-200 transition-colors flex items-center gap-3 text-sm md:text-base rounded-sm shadow-xl">
+          <button className="bg-white text-black px-8 py-4 font-bold hover:bg-zinc-200 transition-colors flex items-center gap-3 text-sm md:text-base rounded-lg shadow-xl">
             Explore Our Solutions <FiArrowRight className="text-lg" />
           </button>
         </motion.div>

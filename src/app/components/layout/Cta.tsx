@@ -36,7 +36,7 @@ export function Cta() {
             <div className="flex-shrink-0 flex items-center">
               <Link 
                 href="/contact" 
-                className="inline-flex items-center justify-center bg-deep-navy text-white px-7 py-3 rounded-full font-semibold text-sm transition-all duration-300 hover:bg-dark-blue hover:shadow-lg hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center bg-deep-navy text-white px-7 py-3 rounded-lg font-semibold text-sm transition-all duration-300 hover:bg-dark-blue hover:shadow-lg hover:-translate-y-0.5"
               >
                 Get in Touch
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="ml-2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
