@@ -3,13 +3,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Drawer } from "vaul";
 import { solutions } from "@/data/solutions";
 
 export function Navbar() {
     const pathname = usePathname();
     const [isOpen, setIsOpen] = useState(false);
+
+    // Automatically close the mobile menu when the route changes
+    useEffect(() => {
+        setIsOpen(false);
+    }, [pathname]);
 
     return (
         <header className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">

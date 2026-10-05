@@ -7,7 +7,7 @@ export function WhyUnitech() {
       {/* Top Header Section */}
       <div className="container-master mx-auto py-16 md:py-24">
         <div className="flex flex-col lg:flex-row justify-between lg:items-start gap-8">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] leading-tight flex-1">
+          <h2 className="text-2xl md:text-4xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] tracking-tight leading-[1.1] flex-1 w-full text-center">
             Why Choose Us
           </h2>
           <div className="flex-1 max-w-xl lg:pt-2">
@@ -41,7 +41,7 @@ export function WhyUnitech() {
                 <FiArrowUpRight className="text-zinc-900 text-lg" />
               </div>
               <div className="flex justify-between items-end">
-                <h3 className="text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900 tracking-tighter">
+                <h3 className="text-xl md:text-2xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] tracking-tight">
                   30+
                 </h3>
                 <div className="w-20 h-24 relative overflow-hidden rounded-sm">
@@ -57,7 +57,7 @@ export function WhyUnitech() {
                 <FiArrowUpRight className="text-zinc-900 text-lg" />
               </div>
               <div className="flex justify-between items-end">
-                <h3 className="text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900 tracking-tighter">
+                <h3 className="text-xl md:text-2xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] tracking-tight">
                   98%
                 </h3>
                 <div className="w-20 h-24 relative overflow-hidden rounded-sm">
@@ -73,7 +73,7 @@ export function WhyUnitech() {
                 <FiArrowUpRight className="text-zinc-900 text-lg" />
               </div>
               <div className="flex justify-between items-end">
-                <h3 className="text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900 tracking-tighter">
+                <h3 className="text-xl md:text-2xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] tracking-tight">
                   1.2K+
                 </h3>
                 <div className="w-20 h-24 relative overflow-hidden rounded-sm">

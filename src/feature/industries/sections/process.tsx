@@ -57,7 +57,7 @@ export function IndustriesProcess() {
             <span className="text-xs font-bold tracking-[0.2em] text-zinc-400 uppercase mb-4 block">
               SOLUTIONS FOR YOUR INDUSTRY
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900 leading-[1.1] font-[family-name:var(--font-ansage)] tracking-tight">
+            <h2 className="text-2xl md:text-4xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] tracking-tight leading-[1.1] w-full text-center mb-8">
               From Industry Needs to Integrated Solutions.
             </h2>
           </div>

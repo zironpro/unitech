@@ -19,8 +19,8 @@ export function WhoWeAre() {
             transition={{ duration: 0.7 }}
             className="w-full lg:w-[55%] flex flex-col items-start text-left lg:pr-12"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900 mb-6 font-[family-name:var(--font-ansage)] leading-[1.05] tracking-tight w-full">
-              A trusted ICT partner for a connected tomorrow.
+            <h2 className="text-2xl md:text-4xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] tracking-tight leading-[1.1] mb-6 w-full text-center">
+              A trusted ICT partner for a connected tomorrow
             </h2>
             
             <div className="flex flex-col gap-6 text-base md:text-lg text-zinc-500 font-medium mb-10 leading-relaxed w-full">

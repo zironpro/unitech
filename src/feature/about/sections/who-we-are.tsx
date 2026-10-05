@@ -9,7 +9,7 @@ export function WhoWeAre() {
             WHO WE ARE
           </span>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] leading-[1.1] mb-8 tracking-tight">
+          <h2 className="text-2xl md:text-4xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] tracking-tight leading-[1.1] w-full text-center mb-8">
             Technology Distribution. Real Impact.
           </h2>
 

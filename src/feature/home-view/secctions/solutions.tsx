@@ -62,7 +62,7 @@ export function Solutions() {
             transition={{ duration: 0.6 }}
             className="flex flex-col"
           >
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] tracking-tight">
+            <h2 className="text-2xl md:text-4xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] tracking-tight leading-[1.1] w-full text-center">
               Our Core Services
             </h2>
           </motion.div>
@@ -71,6 +71,7 @@ export function Solutions() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
+            className="self-end"
           >
             <Link href="/solutions" className="text-zinc-500 text-sm font-bold uppercase tracking-wider hover:text-zinc-900 transition-colors flex items-center gap-2 pb-2">
               View All
@@ -100,7 +101,7 @@ export function Solutions() {
 
                 {/* 2. Title */}
                 <div className="w-full md:w-[25%] flex-shrink-0 self-start md:pt-1">
-                  <h3 className="text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] tracking-tight group-hover:opacity-70 transition-opacity">
+                  <h3 className="text-xl md:text-2xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] tracking-tight group-hover:opacity-70 transition-opacity">
                     {item.title}
                   </h3>
                 </div>

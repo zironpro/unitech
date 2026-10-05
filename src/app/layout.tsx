@@ -34,6 +34,9 @@ import { Navbar } from "./components/layout/Navbar";
 import { CtaWrapper } from "./components/layout/CtaWrapper";
 import { Footer } from "./components/layout/Footer";
 
+import { ScrollToTop } from "./components/ui/scroll-to-top";
+import { WhatsAppChat } from "./components/ui/whatsapp-chat";
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
@@ -41,6 +44,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${ansage.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <ScrollToTop />
+        <WhatsAppChat />
         <Navbar />
         <div className="flex-1 flex flex-col">
           {children}

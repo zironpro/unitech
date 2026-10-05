@@ -11,7 +11,7 @@ export function WhyChooseUs() {
             WHY CHOOSE UNITECH
           </span>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900 leading-[1.1] font-[family-name:var(--font-ansage)] mb-6 tracking-tight">
+          <h2 className="text-2xl md:text-4xl font-normal text-zinc-900 font-[family-name:var(--font-ansage)] tracking-tight leading-[1.1] w-full text-center mb-6">
             More Than Distribution. A Technology Partner.
           </h2>
 
